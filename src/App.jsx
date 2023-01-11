@@ -1,12 +1,16 @@
-
+import React from 'react';
 import './App.css';
-import Button from '@mui/material/Button'
+import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
+
+import NavBar from './Components/NavBar/NavBar';
+
 
 function App() {
   return (
-    <div>
-    <Button variant="contained">Holas</Button>
-  </div>)
+    <>
+      <NavBar />
+      <ItemListContainer />
+    </>)
 }
 
 export default App;
