@@ -11,10 +11,11 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import imagenes from '../../assets/imagenes';
-import Prueba from '../MenuRes/MenuRes'
+import MenuRes from './MenuRes'
+import CajaSearch from "./CajaSearch";
 
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Entradas', 'Platos Principales','Postres', 'Bebidas'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const NavBar = () => {
@@ -37,7 +38,6 @@ const NavBar = () => {
       <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          
           <Typography
             variant="h6"
             noWrap
@@ -53,12 +53,12 @@ const NavBar = () => {
               textDecoration: 'none',
             }}
           >
-            <img className="LogoPeque" sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} src={imagenes[0].img} alt={imagenes[0].descripcion}/>
+            <img className="LogoPeque"  src={imagenes[0].img} alt={imagenes[0].descripcion}/>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
            
-              <Prueba />
+            <MenuRes />
             
             <Menu
               id="menu-appbar"
@@ -86,11 +86,12 @@ const NavBar = () => {
             </Menu>
           </Box>
           
-          <Typography
+          <Box
             variant="h5"
             noWrap
             component="a"
             href=""
+           
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -100,10 +101,12 @@ const NavBar = () => {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+            
+             
             }}
           >
-            <img className="LogoPeque" sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} src={imagenes[0].img} alt={imagenes[0].descripcion}/>
-          </Typography>
+            <img className="LogoPeque"  src={imagenes[0].img} alt={imagenes[0].descripcion}/>
+          </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -115,8 +118,10 @@ const NavBar = () => {
               </Button>
             ))}
           </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
+          <Box sx={{ display: { xs: 'none', md: 'flex' } ,mr:2}}>
+            <CajaSearch/>
+          </Box>
+          <Box sx={{ flexGrow: 0  }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
@@ -145,6 +150,7 @@ const NavBar = () => {
               ))}
             </Menu>
           </Box>
+          
         </Toolbar>
       </Container>
     </AppBar>
