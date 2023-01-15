@@ -5,73 +5,190 @@
       "title": "Empanadas" ,
       "description": "Empanada de carne picada a cuchillo",
       "price": 120,
-      "picture": "https://img.freepik.com/foto-gratis/tartas-recien-horneadas-bandeja-madera_181624-53000.jpg?w=740&t=st=1673240895~exp=1673241495~hmac=c54d7edb934914110d48b3843051a93ac574ebf910a3fef32b4ffc687988106d"
+      "picture": "https://img.freepik.com/foto-gratis/empanadas-carne-masa-bougie-tabla-madera_140725-4827.jpg?w=1380&t=st=1673762672~exp=1673763272~hmac=3237162fbc334db9b1157655ae1b70499644cc633c81cb3bb749282062c217e7",
+      "category":"entrada",
+      "rating": 4.5
     },
     {
       "id": 2,
-      "title": "Ravioles",
-      "description": "Ravioles de verdura",
-      "price": 1200,
-      "picture": "https://img.freepik.com/foto-gratis/primer-plano-sabrosos-ravioles-italianos_1220-5142.jpg?w=1380&t=st=1673240839~exp=1673241439~hmac=736cb10aec4d0a3f7565bb4fa8e25468d147b23c2e4c4c31341b37f3ebf22c6c" 
+      "title": "Hummus",
+      "description": "Hummus de garbanzo decorado con aceite de oliva, garbanzos y paprika",
+      "price": 250,
+      "picture": "https://img.freepik.com/foto-gratis/hummus-clasico-oriental-recien-hecho-servido-tazon-sobre-mesa_1220-5511.jpg?w=1380&t=st=1673772465~exp=1673773065~hmac=70b819400f4f430c078549cf371fa0f0d2158b46544e5f33f4334389ed905143",
+      "category":"entrada",
+      "rating": 4
     },
     {
       "id": 3,
-      "title": "Pizza",
-      "description": "Pizza con pepperoni picante",
-      "price": 1750,
-      "picture": "https://img.freepik.com/foto-gratis/deliciosa-pizza-napolitana-carne-pizzeria-deliciosa-comida_78826-2833.jpg?w=1380&t=st=1673242008~exp=1673242608~hmac=b9ddeadcdac939849c3542337429664e211f9527738a6695088408b9186d002d"
+      "title": "Picada para compartir",
+      "description": "Picada de queso de cabra, roquefort, aceitunas, salame, jamon crudo y bondiola ahumada",
+      "price": 800,
+      "picture": "https://img.freepik.com/foto-gratis/bandeja-catering-antipasto-tocino-cecina-salami-queso-uvas-mesa-madera_2829-19948.jpg?w=1380&t=st=1673772418~exp=1673773018~hmac=5cbab6816ac6f18a745a3078c8f9f1eeb2220422cb84b7a02307793cf4e3c436",
+      "category":"entrada",
+      "rating": 3
     },
     {
       "id": 4,
-      "title": "Cazuela de Mariscos",
-      "description": "Casuela con calamar, langostinos y mejillones",
-      "price": 1700,
-      "picture": "https://img.freepik.com/foto-gratis/sabrosa-paella-espanola-marisco_1205-8949.jpg?w=1380&t=st=1673240847~exp=1673241447~hmac=77d52c991b44a18476e9b4f99d01753509cb0f16cf651a078a68d210353ffa28"
+      "title": "Rabas",
+      "description": "Rabas con salsa de yogurt y peregil",
+      "price": 500,
+      "picture": "https://img.freepik.com/foto-gratis/calamares-fritos-anillos-calamares_1339-4715.jpg?w=1380&t=st=1673773138~exp=1673773738~hmac=c09626f2504e22efcfd8b16308069bbb79dca64508736fde8ef7d87d0bf33078",
+      "category":"entrada",
+      "rating": 5
     },
     {
       "id": 5,
-      "title": "Helado",
-      "description": "Crema Americana con salsa de chocolate",
-      "price": 250,
-      "picture": "https://img.freepik.com/foto-gratis/helado_144627-7393.jpg?w=1380&t=st=1673242232~exp=1673242832~hmac=56eb44aa8ecb77351d8b5a471fedf91b9972bc820f81a9037e7b0cde730f247d"
-    }
-
-  ],
-  "platosBackUp": [
-     {
-      "id": 1,
-      "title": "Empanadas" ,
-      "description": "Empanada de carne picada a cuchillo",
-      "price": 120,
-      "picture": "https://img.freepik.com/foto-gratis/tartas-recien-horneadas-bandeja-madera_181624-53000.jpg?w=740&t=st=1673240895~exp=1673241495~hmac=c54d7edb934914110d48b3843051a93ac574ebf910a3fef32b4ffc687988106d"
-    },
-    {
-      "id": 2,
       "title": "Ravioles",
       "description": "Ravioles de verdura",
-      "price": 1200,
-      "picture": "https://img.freepik.com/foto-gratis/primer-plano-sabrosos-ravioles-italianos_1220-5142.jpg?w=1380&t=st=1673240839~exp=1673241439~hmac=736cb10aec4d0a3f7565bb4fa8e25468d147b23c2e4c4c31341b37f3ebf22c6c" 
+      "price": 1300,
+      "picture": "https://img.freepik.com/foto-gratis/primer-plano-sabrosos-ravioles-italianos_1220-5142.jpg?w=1380&t=st=1673240839~exp=1673241439~hmac=736cb10aec4d0a3f7565bb4fa8e25468d147b23c2e4c4c31341b37f3ebf22c6c",
+      "category": "principal",
+      "rating": 4.5
     },
     {
-      "id": 3,
+      "id": 6,
       "title": "Pizza",
       "description": "Pizza con pepperoni picante",
-      "price": 1750,
-      "picture": "https://img.freepik.com/foto-gratis/deliciosa-pizza-napolitana-carne-pizzeria-deliciosa-comida_78826-2833.jpg?w=1380&t=st=1673242008~exp=1673242608~hmac=b9ddeadcdac939849c3542337429664e211f9527738a6695088408b9186d002d"
+      "price": 1250,
+      "picture": "https://img.freepik.com/foto-gratis/deliciosa-pizza-napolitana-carne-pizzeria-deliciosa-comida_78826-2833.jpg?w=1380&t=st=1673242008~exp=1673242608~hmac=b9ddeadcdac939849c3542337429664e211f9527738a6695088408b9186d002d",
+      "category":"principal",
+      "rating": 4
     },
     {
-      "id": 4,
+      "id": 7,
       "title": "Cazuela de Mariscos",
       "description": "Casuela con calamar, langostinos y mejillones",
       "price": 1700,
-      "picture": "https://img.freepik.com/foto-gratis/sabrosa-paella-espanola-marisco_1205-8949.jpg?w=1380&t=st=1673240847~exp=1673241447~hmac=77d52c991b44a18476e9b4f99d01753509cb0f16cf651a078a68d210353ffa28"
+      "picture": "https://img.freepik.com/foto-gratis/sabrosa-paella-espanola-marisco_1205-8949.jpg?w=1380&t=st=1673240847~exp=1673241447~hmac=77d52c991b44a18476e9b4f99d01753509cb0f16cf651a078a68d210353ffa28",
+      "category":"principal",
+      "rating": 4.5
     },
     {
-      "id": 5,
+      "id": 8,
+      "title": "Pollo teriyaki",
+      "description": "Pollo con salsa teriyaki acompañado con ensalada y papas fritas",
+      "price": 900,
+      "picture": "https://img.freepik.com/foto-gratis/parrilla-filete-pollo-salsa-teriyaki_1339-6778.jpg?w=1380&t=st=1673772787~exp=1673773387~hmac=0c9e178ce45f787e85b2b6976802bbc03dcce415c437ed361a9a9fc1689bb74a",
+      "category":"principal",
+      "rating": 3
+    },
+    {
+      "id": 9,
+      "title": "Pollo Frito ",
+      "description": "Cinco piezas de pollo frito acopañado de ketchup para untar",
+      "price": 900,
+      "picture": "https://img.freepik.com/foto-gratis/pollo-frito-crujiente-plato-madera-salsa-tomate_1150-20205.jpg?w=1380&t=st=1673772891~exp=1673773491~hmac=2796e748bc724f2231ed0551198d86f55dda3a8cf3b709c4d55bc9b7f67ee54a",
+      "category":"princilal",
+      "rating": 4
+    },
+    {
+      "id": 10,
+      "title": "Salmon con Esparragos",
+      "description": "Salmon a la plancha acompañado de esparragos salteados en manteca",
+      "price": 1700,
+      "picture": "https://img.freepik.com/foto-gratis/salmon-al-horno-esparragos-tomates-hierbas_2829-14516.jpg?w=1380&t=st=1673772964~exp=1673773564~hmac=4a4c2342278fd9319d871bcff326478283ccd07cc0e72420ff3eb26e0ca06a1e",
+      "category":"principal",
+      "rating": 5
+    },
+    {
+      "id": 11,
+      "title": "Spaghetti",
+      "description": "Spaghetti con salsa de tomate y albahaca",
+      "price": 1300,
+      "picture": "https://img.freepik.com/foto-gratis/apetitosa-pasta-salsa-tomate-queso-parmesano-placa-primer-plano_1220-6923.jpg?w=1380&t=st=1673773208~exp=1673773808~hmac=fb6fb2d071612cbd67b8b1eb36067d5e627df288d281a77792386673107bb5a1",
+      "category":"principal",
+      "rating": 4.5
+    },
+    {
+      "id": 12,
+      "title": "Hambuerguesa Veggie",
+      "description": "Hamburguesa de lentejas",
+      "price": 800,
+      "picture": "https://img.freepik.com/foto-gratis/vista-superior-hamburguesa-ternera-salsa-pepino-vinagre-servido-restaurante_141793-2110.jpg?w=1380&t=st=1673773752~exp=1673774352~hmac=0d77dc3a6f297051449b423b664fb89aecca330e7b6b9009e5145806bb24cedc",
+      "category":"principal",
+      "rating": 4
+    },
+    {
+      "id": 13,
+      "title": "Tiramisú",
+      "description": "Tiramisú de la casa",
+      "price": 300,
+      "picture": "https://img.freepik.com/foto-gratis/sabroso-pastel-tiramisu-casero_114579-85350.jpg?w=1380&t=st=1673773588~exp=1673774188~hmac=6801c99b9d7166756edf27221d51aba6ac90cf6c80d77dd1488e78c4fd612d58",
+      "category":"postre",
+      "rating": 4.5
+    },
+    {
+      "id": 14,
       "title": "Helado",
       "description": "Crema Americana con salsa de chocolate",
       "price": 250,
-      "picture": "https://img.freepik.com/foto-gratis/helado_144627-7393.jpg?w=1380&t=st=1673242232~exp=1673242832~hmac=56eb44aa8ecb77351d8b5a471fedf91b9972bc820f81a9037e7b0cde730f247d"
+      "picture": "https://img.freepik.com/foto-gratis/helado_144627-7393.jpg?w=1380&t=st=1673242232~exp=1673242832~hmac=56eb44aa8ecb77351d8b5a471fedf91b9972bc820f81a9037e7b0cde730f247d",
+      "category":"postre",
+      "rating": 3
+    },
+    {
+      "id": 15,
+      "title": "Brownie",
+      "description": "Brownie de cacao",
+      "price": 250,
+      "picture": "https://img.freepik.com/foto-gratis/tarta-pastel-brownie-chocolate-platos-caseros_114579-585.jpg?w=1380&t=st=1673773475~exp=1673774075~hmac=4843707daa056c5e6bfb7d2166faef71cfe4f15730c921b772eceece9833839b",
+      "category":"postre",
+      "rating": 5
+    },
+    {
+      "id": 16,
+      "title": "Flan",
+      "description": "Flan de la casa",
+      "price": 200,
+      "picture": "https://img.freepik.com/foto-gratis/flan-postre-espanol-salsa-servido-plato-cerca_1220-6716.jpg?w=1380&t=st=1673773483~exp=1673774083~hmac=0f443bd532dd4322db1f5e2bdca761e5f2762b4e620948d34211719865b2daaf",
+      "category":"postre",
+      "rating": 4
+    },
+    {
+      "id": 17,
+      "title": "Gaseosa",
+      "description": "Gaseosa de 1.25l",
+      "price": 500,
+      "picture": "https://img.freepik.com/foto-gratis/sirviendo-cola-botella-vaso-lleno-hielo_463209-157.jpg?w=1380&t=st=1673773977~exp=1673774577~hmac=d29339149caeae9db8664cfe8bf7dcf6918088896ee52e62732bcf135f0d5da9",
+      "category":"bebida",
+      "rating": 5
+    },
+    {
+      "id": 18,
+      "title": "Cerveza",
+      "description": "Cerveza 710cc",
+      "price": 750,
+      "picture": "https://img.freepik.com/foto-gratis/botellas-vidrio-cerveza-vidrio-hielo-sobre-fondo-oscuro_1150-8901.jpg?w=1380&t=st=1673773986~exp=1673774586~hmac=9e865c96f44ae4fee79ccd90c3de6e4e7acad24a461431bb96e672ff72ee577f",
+      "category":"bebida",
+      "rating": 5
+    },
+    {
+      "id": 19,
+      "title": "Vino Tinto",
+      "description": "Vino tinto Malbec",
+      "price": 1350,
+      "picture": "https://img.freepik.com/foto-gratis/copa-vino-tinto-botella-barra-bar_107420-65845.jpg?w=1380&t=st=1673773994~exp=1673774594~hmac=41a48c2de0b4a2b3bf2d53d5de1ad4e00c68533a6a3acb265c549e47a1872f9a",
+      "category":"bebida",
+      "rating":5
+    },
+    {
+      "id": 20,
+      "title": "Vino Blanco",
+      "description": "Vino blanco Syrah",
+      "price": 1400,
+      "picture": "https://img.freepik.com/foto-gratis/verter-vino-blanco-copa-vino-sobre-superficie-oscura_114579-33941.jpg?w=1380&t=st=1673774005~exp=1673774605~hmac=d847afec91f6b222e5a5fd332641b22f8ddea4a1a627f9cead88fd5f230bfe1b",
+      "category":"bebida",
+      "rating":5
+    },
+    {
+      "id": 21,
+      "title": "Agua",
+      "description": "Agua mineral embotellada de 500cc",
+      "price": 400,
+      "picture": "https://img.freepik.com/foto-gratis/botella-agua-mesa-madera_93675-131264.jpg?w=1380&t=st=1673774706~exp=1673775306~hmac=050f177112d33fd93a6febcd9eec2c8dbcce13aef5200ae53d563a13b0d72a9d",
+      "category":"bebida",
+      "rating":5
     }
-  ]
+    
+  ] 
 }

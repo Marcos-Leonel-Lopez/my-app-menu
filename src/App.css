@@ -1,4 +1,76 @@
 .LogoPeque {
   width: auto;
   height: 55px;
+}
+
+.itemList {
+  list-style-type: none;
+}
+
+.itemIndividual {
+  margin-bottom: 50px;
+  text-align: center;
+  border-radius: 10px;
+  width: 370px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.779);
+}
+.itemIndividual .Imagenes-product {
+  margin: 13px auto 13px auto;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.Pagina-contenedora {
+  padding-top: 50px;
+  background-color: grey;
+  background-size: cover;
+}
+
+.Item-detail {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  text-align: center;
+  border-radius: 10px;
+  width: 1240px;
+  height: 600px;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.779);
+}
+.Item-detail .Text-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.Item-detail .Text-detail .Description-detail {
+  width: 600px;
+  height: 250px;
+}
+.Item-detail .Text-detail .Description-detail .Nombre {
+  margin: 5px auto 5px auto;
+  height: 50px;
+}
+.Item-detail .Text-detail .Description-detail .Descipcion {
+  margin: 5px auto 5px auto;
+  height: 90px;
+}
+.Item-detail .Text-detail .Description-detail .Rating {
+  margin: auto;
+  height: 40px;
+}
+.Item-detail .Text-detail .Add-detail {
+  height: 250px;
+}
+.Item-detail .Imagen-detail {
+  margin: 5px auto 5px auto;
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
 }/*# sourceMappingURL=App.css.map */

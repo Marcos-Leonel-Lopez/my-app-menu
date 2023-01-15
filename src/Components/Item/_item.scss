@@ -1,0 +1,20 @@
+.itemIndividual{
+    margin-bottom: 50px;
+    text-align: center;
+    border-radius: 10px;
+    width:370px;
+    height:450px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.779);
+    
+    .Imagenes-product{
+        margin: 13px auto 13px auto;
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+        
+    }
+}
