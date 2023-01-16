@@ -21,8 +21,11 @@ import ItemListContainer from '../ItemListContainer/ItemListContainer'
 import imagenes from '../../assets/imagenes';
 import CajaSearch from './CajaSearch';
 
+
+
 import { Badge, Button, Menu, MenuItem, Tooltip } from '@mui/material';
 import CarWidget from '../CartWidget/CarWidget';
+import { Link, NavLink } from 'react-router-dom';
 
 
 
@@ -122,13 +125,12 @@ export default function MenuResII() {
             sx={{ ...(open && { display: 'none' }) }}
             disabled={isButtonDisabled}
           >
-            <MenuIcon
+            <MenuIcon to="/"
               sx={{ display: { xs: 'flex', md: 'none' }, mr: 2 }}
             />
           </IconButton >
           <Box
             variant="h5"
-            component="a"
             justifyContent="center"
             sx={{
               display: { xs: 'flex', md: 'none' },
@@ -142,9 +144,14 @@ export default function MenuResII() {
 
             }}
           >
-            <img className="LogoPeque" src={imagenes[0].img} alt={imagenes[0].descripcion} />
+            <Link to="/">
+              <img className="LogoPeque" src={imagenes[0].img} alt={imagenes[0].descripcion} />
+            </Link>
+
           </Box>
           <Box
+
+            to="/"
             variant="h6"
             component="a"
             href="/"
@@ -161,34 +168,42 @@ export default function MenuResII() {
             <img className="LogoPeque" src={imagenes[0].img} alt={imagenes[0].descripcion} />
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <NavLink to="/category/entrada" activeclassname="active" >
             <Button
               key={'Entradas'}
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: 'white', display: 'block' }}
             >
-              Entradas
-            </Button>
+                Entradas
+              </Button>
+            </NavLink>
+             <NavLink to="/category/principal" activeclassname="active">
             <Button
               key={'Platos Principales'}
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: 'white', display: 'block' }}
             >
-              Platos Principales
-            </Button>
+             Platos Principales
+              </Button>
+            </NavLink>
+            <NavLink to="/category/postre"  activeclassname="active">
             <Button
               key={'Postres'}
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: 'white', display: 'block' }}
             >
-              Postres
+                Postres
             </Button>
+            </NavLink>
+            <NavLink to="/category/bebida" activeclassname="active">
             <Button
               key={'Bebidas'}
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: 'white', display: 'block' }}
             >
-              Bebidas
+                Bebidas
             </Button>
+            </NavLink>
           </Box>
           <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 2 }}>
             <CajaSearch />

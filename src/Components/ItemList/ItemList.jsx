@@ -1,27 +1,20 @@
 import { Box, Grid } from "@mui/material";
 import React from "react";
-import { useEffect } from "react";
-import LoadingButton from '@mui/lab/LoadingButton';
-import SaveIcon from '@mui/icons-material/Save';
-import { experimentalStyled as styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
 import MyItem from "../Item/MyItem";
+import { Link } from "react-router-dom";
 
 
 
 const ItemList = ({ productos }) => {
 
     return (
-        
-            <Box sx={{display:'flex', flexDirection:'row', justifyContent: 'space-evenly', flexWrap:'wrap'}} >
-                {
-                    productos.map((producto) => <MyItem key={producto.id} producto={producto} />)
-                }
-            </Box>
-        
-
-
-
+        <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', flexWrap: 'wrap', minHeight: '100vh' }}  >
+            {productos.map((producto) => (
+                <Link to={`item/${producto.id}`} key={producto.id}>
+                    <MyItem producto={producto} />
+                </Link>
+            ))}
+        </Box>
     )
 };
 

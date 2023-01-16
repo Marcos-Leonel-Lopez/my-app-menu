@@ -3,12 +3,9 @@ import React from 'react';
 import './App.css';
 import NavBar from './Components/NavBar/NavBar';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
-
-//import NavBar from './Components/NavBar/NavBar';
-//import CajaSearch from './Components/NavBar/CajaSearch';
-
 import { createTheme } from '@mui/material/styles';
 import ItemDetailConteiner from './Components/ItemDetailContainer/ItemDetailConteiner';
+import {BrowserRouter , Routes, Route,} from 'react-router-dom';
 
 const theme = createTheme({
   palette: {
@@ -31,9 +28,19 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme} >
+      <BrowserRouter>
       <NavBar />
-      <ItemListContainer />
-      <ItemDetailConteiner/>
+      <Routes>
+        <Route path='/' element={<ItemListContainer />} / >
+        <Route path='item/:id' element={<ItemDetailConteiner/>} />
+        <Route path='/category/:category' element={<ItemListContainer />} / >
+        <Route path='/category/:category/item/:id' element={<ItemDetailConteiner/>} />
+      </Routes>
+      </BrowserRouter>
+
+
+
+     
     </ThemeProvider>)
 }
 

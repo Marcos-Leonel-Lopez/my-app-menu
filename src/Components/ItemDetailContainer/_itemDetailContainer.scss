@@ -1,3 +1,11 @@
+.Detalles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    background-size: cover;
+    height: 100vh;
+}
 .Item-detail{
     display: flex;
     flex-direction: row;
