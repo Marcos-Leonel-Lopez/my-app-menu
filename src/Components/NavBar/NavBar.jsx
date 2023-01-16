@@ -233,44 +233,44 @@ export default function MenuResII() {
         </DrawerHeader>
         <Divider />
         <List >
+        <NavLink to="/category/entrada" activeclassname="active" className="Inactive" >
           <ListItem key={'Entradas'} disablePadding >
             <ListItemButton>
               <ListItemText primary={'Entradas'} />
             </ListItemButton>
           </ListItem>
-          <ListItem key={'Platos Principales'} disablePadding >
+          </NavLink>
+          <NavLink to="/category/principal" activeclassname="active" className="Inactive" >
+            <ListItem key={'Platos Principales'} disablePadding >
             <ListItemButton>
               <ListItemText primary={'Platos Principales'} />
             </ListItemButton>
           </ListItem>
-          <ListItem key={'Postres'} disablePadding>
+          </NavLink>
+          
+          <NavLink to="/category/postre" activeclassname="active" className="Inactive" >
+            <ListItem key={'Postres'} disablePadding>
             <ListItemButton>
               <ListItemText primary={'Postres'} />
             </ListItemButton>
           </ListItem>
-          <ListItem key={'Bebidas'} disablePadding>
+          </NavLink>
+          
+          <NavLink to="/category/bebida" activeclassname="active" className="Inactive" >
+            <ListItem key={'Bebidas'} disablePadding>
             <ListItemButton>
               <ListItemText primary={'Bebidas'} />
             </ListItemButton>
           </ListItem>
+          </NavLink>
+          
           <Divider />
           <Box>
             <CajaSearch />
           </Box>
           <Divider />
-          {/* {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))} */}
         </List>
       </Drawer>
-
       <Main open={open}>
 
         {/* <Box >

@@ -8,7 +8,7 @@ const ItemDetail = ({ producto }) => {
     const [value, setValue] = useState(2.5);
     return (
         <>
-            <Box className="Item-detail" href="#">
+            <Box className="Item-detail">
                 <div>
                     <img className="Imagen-detail" src={producto.picture} alt={producto.description} />
                 </div>

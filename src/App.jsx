@@ -37,10 +37,6 @@ function App() {
         <Route path='/category/:category/item/:id' element={<ItemDetailConteiner/>} />
       </Routes>
       </BrowserRouter>
-
-
-
-     
     </ThemeProvider>)
 }
 

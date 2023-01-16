@@ -3,8 +3,15 @@
   height: 55px;
 }
 
+.active {
+  text-decoration: none;
+}
 .active Button {
   border: solid;
+}
+
+.Inactive {
+  text-decoration: none;
 }
 
 .itemList {
