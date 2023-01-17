@@ -34,10 +34,10 @@ function App() {
         <Route path='/' element={<ItemListContainer />} / >
         <Route path='item/:id' element={<ItemDetailConteiner/>} />
         <Route path='/category/:category' element={<ItemListContainer />} / >
-        <Route path='/category/:category/item/:id' element={<ItemDetailConteiner/>} />
       </Routes>
       </BrowserRouter>
-    </ThemeProvider>)
+    </ThemeProvider>
+    )
 }
 
 export default App;

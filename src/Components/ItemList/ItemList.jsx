@@ -10,7 +10,7 @@ const ItemList = ({ productos }) => {
     return (
         <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', flexWrap: 'wrap', minHeight: '100vh' }}  >
             {productos.map((producto) => (
-                <Link to={`item/${producto.id}`} key={producto.id}>
+                <Link to={`/item/${producto.id}`} key={producto.id}>
                     <MyItem producto={producto} />
                 </Link>
             ))}
