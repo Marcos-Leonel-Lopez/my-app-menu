@@ -1,15 +1,14 @@
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import { useTheme } from '@mui/material/styles';
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
-import { Box, Button, Card, CardContent, Grid, IconButton, Typography } from '@mui/material';
-import { useState } from 'react';
-import { alpha, Container } from '@mui/system';
+import { Box, Button, Card } from '@mui/material';
+import { useState, useContext } from 'react';
+import { alpha } from '@mui/system';
 
 
-const ItemCount = () => {
+const ItemCount = ({stock, cantidad}) => {
     const theme = useTheme();
     const [count, setCount] = useState(0);
-    const stock = 5;
     const suma = () => {
         if (stock === count) {
             return;
@@ -42,7 +41,7 @@ const ItemCount = () => {
                     <Button variant='contained' sx={{ ml: 6 }} onClick={suma}><AddCircleIcon edge='end' /></Button>
                 </Box>
                 <Box>
-                    <Button variant='contained'>Agregar al carrito</Button>
+                <Button variant='contained' onClick={()=>cantidad(count)}>Agregar al carrito</Button>
                 </Box>
             </Card>
         </Box>

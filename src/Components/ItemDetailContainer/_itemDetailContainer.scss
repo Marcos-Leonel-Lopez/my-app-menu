@@ -4,17 +4,18 @@
     align-items: center;
     background-color: grey;
     background-size: cover;
-    height: 100vh;
+    height: 850px;
+    padding: 30% auto;
+    
    
 }
 .Item-detail{
     display: flex;
     flex-direction: row;
-    margin-bottom: 50px;
     text-align: center;
     border-radius: 10px;
-    width:1240px;
-    height:600px;
+    width:1170px;
+    height:550px;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(255, 255, 255, 0.779);
@@ -23,7 +24,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         .Description-detail{
-        width: 600px;
+        width: 550px;
         height: 250px;
         .Nombre{
             margin: 5px auto 5px auto;
@@ -38,19 +39,125 @@
             height: 40px;
         }
         }
-        .Add-detail{
-            height: 250px;
-        }
-        
+            
     }
     
     .Imagen-detail{
         
         margin: 5px auto 5px auto;
-        width: 600px;
+        width: 550px;
         height: auto;
         border-radius: 10px;
         
         
     }
 }
+
+@media (max-width: 1200px){
+    .Detalles{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: grey;
+        background-size: cover;
+      
+        overflow-y: scroll;
+       
+    }
+    .Item-detail{
+    display: flex;
+    flex-direction: column;
+    width:560px;
+    height:750px;
+    
+    .Text-detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .Description-detail{
+        width: 550px;
+        height: 150px;
+        .Nombre{
+            margin: 5px auto 5px auto;
+            height: 50px;
+        }
+        .Descipcion{
+            margin: 5px auto 5px auto;
+            height: 90px;
+        }
+        .Rating{
+            margin: auto;
+            height: 40px;
+        }
+        }
+      
+    }
+    
+    .Imagen-detail{
+        
+        margin: 5px auto 5px auto;
+        width: 400px;
+        height: auto;
+        border-radius: 10px;
+        
+        
+    }
+    }
+}
+
+// .Detalles{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: grey;
+//     background-size: cover;
+//     height: 100vh;
+   
+// }
+// .Item-detail{
+//     display: flex;
+//     flex-direction: row;
+//     margin-bottom: 50px;
+//     text-align: center;
+//     border-radius: 10px;
+//     width:1240px;
+//     height:550px;
+//     align-items: center;
+//     justify-content: space-evenly;
+//     background-color: rgba(255, 255, 255, 0.779);
+//     .Text-detail{
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-evenly;
+//         .Description-detail{
+//         width: 600px;
+//         height: 250px;
+//         .Nombre{
+//             margin: 5px auto 5px auto;
+//             height: 50px;
+//         }
+//         .Descipcion{
+//             margin: 5px auto 5px auto;
+//             height: 90px;
+//         }
+//         .Rating{
+//             margin: auto;
+//             height: 40px;
+//         }
+//         }
+//         .Add-detail{
+//             height: 250px;
+//         }
+        
+//     }
+    
+//     .Imagen-detail{
+        
+//         margin: 5px auto 5px auto;
+//         width: 600px;
+//         height: auto;
+//         border-radius: 10px;
+        
+        
+//     }
+// }

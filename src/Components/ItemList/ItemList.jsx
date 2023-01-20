@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material";
+import { Box } from "@mui/material";
 import React from "react";
 import MyItem from "../Item/MyItem";
 import { Link } from "react-router-dom";
@@ -19,14 +19,3 @@ const ItemList = ({ productos }) => {
 };
 
 export default ItemList;
-    // useEffect(() => {
-    //     <LoadingButton
-    //     loading
-    //     loadingPosition="start"
-    //     startIcon={<SaveIcon />}
-    //     variant="contained"
-    //   >
-    //     Cargando...
-    //     {console.log('hola')}
-    //   </LoadingButton>
-    //   },[{ productos }]);

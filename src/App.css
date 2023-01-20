@@ -43,23 +43,31 @@
   background-size: cover;
 }
 
+.Carga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
 .Detalles {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: grey;
   background-size: cover;
-  height: 100vh;
+  height: 850px;
+  padding: 30% auto;
 }
 
 .Item-detail {
   display: flex;
   flex-direction: row;
-  margin-bottom: 50px;
   text-align: center;
   border-radius: 10px;
-  width: 1240px;
-  height: 600px;
+  width: 1170px;
+  height: 550px;
   align-items: center;
   justify-content: space-evenly;
   background-color: rgba(255, 255, 255, 0.779);
@@ -70,7 +78,7 @@
   justify-content: space-evenly;
 }
 .Item-detail .Text-detail .Description-detail {
-  width: 600px;
+  width: 550px;
   height: 250px;
 }
 .Item-detail .Text-detail .Description-detail .Nombre {
@@ -85,12 +93,53 @@
   margin: auto;
   height: 40px;
 }
-.Item-detail .Text-detail .Add-detail {
-  height: 250px;
-}
 .Item-detail .Imagen-detail {
   margin: 5px auto 5px auto;
-  width: 600px;
+  width: 550px;
   height: auto;
   border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  .Detalles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    background-size: cover;
+    overflow-y: scroll;
+  }
+  .Item-detail {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    height: 750px;
+  }
+  .Item-detail .Text-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .Item-detail .Text-detail .Description-detail {
+    width: 550px;
+    height: 150px;
+  }
+  .Item-detail .Text-detail .Description-detail .Nombre {
+    margin: 5px auto 5px auto;
+    height: 50px;
+  }
+  .Item-detail .Text-detail .Description-detail .Descipcion {
+    margin: 5px auto 5px auto;
+    height: 90px;
+  }
+  .Item-detail .Text-detail .Description-detail .Rating {
+    margin: auto;
+    height: 40px;
+  }
+  .Item-detail .Imagen-detail {
+    margin: 5px auto 5px auto;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
 }/*# sourceMappingURL=App.css.map */

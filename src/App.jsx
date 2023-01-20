@@ -5,7 +5,9 @@ import NavBar from './Components/NavBar/NavBar';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
 import { createTheme } from '@mui/material/styles';
 import ItemDetailConteiner from './Components/ItemDetailContainer/ItemDetailConteiner';
-import {BrowserRouter , Routes, Route,} from 'react-router-dom';
+import { BrowserRouter, Routes, Route, } from 'react-router-dom';
+import CartProvider from './context/CartProvider';
+
 
 const theme = createTheme({
   palette: {
@@ -29,15 +31,17 @@ function App() {
   return (
     <ThemeProvider theme={theme} >
       <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path='/' element={<ItemListContainer />} / >
-        <Route path='item/:id' element={<ItemDetailConteiner/>} />
-        <Route path='/category/:category' element={<ItemListContainer />} / >
-      </Routes>
+        <CartProvider>
+          <NavBar />
+          <Routes>
+            <Route path='/' element={<ItemListContainer />} />
+            <Route path='item/:id' element={<ItemDetailConteiner />} />
+            <Route path='/category/:category' element={<ItemListContainer />} />
+          </Routes>
+        </CartProvider>
       </BrowserRouter>
     </ThemeProvider>
-    )
+  )
 }
 
 export default App;
