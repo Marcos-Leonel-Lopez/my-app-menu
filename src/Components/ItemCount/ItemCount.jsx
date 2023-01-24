@@ -4,11 +4,23 @@ import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
 import { Box, Button, Card } from '@mui/material';
 import { useState, useContext } from 'react';
 import { alpha } from '@mui/system';
+import { cartContext } from '../../context/cartContext';
 
 
-const ItemCount = ({stock, cantidad}) => {
+
+const ItemCount = ({stock, producto}) => {
     const theme = useTheme();
+    const {cart , addItem} = useContext(cartContext);
     const [count, setCount] = useState(0);
+    const add = ()=>{
+        if (count !== 0) {
+        console.log(count);
+        addItem(producto, count);
+         }else{
+            console.log('no se agrego item');
+         }
+     
+    }
     const suma = () => {
         if (stock === count) {
             return;
@@ -41,7 +53,7 @@ const ItemCount = ({stock, cantidad}) => {
                     <Button variant='contained' sx={{ ml: 6 }} onClick={suma}><AddCircleIcon edge='end' /></Button>
                 </Box>
                 <Box>
-                <Button variant='contained' onClick={()=>cantidad(count)}>Agregar al carrito</Button>
+                <Button variant='contained' onClick={add}>Agregar al carrito</Button>
                 </Box>
             </Card>
         </Box>

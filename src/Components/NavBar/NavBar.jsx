@@ -33,7 +33,6 @@ import { Link, NavLink } from 'react-router-dom';
 
 const drawerWidth = 240;
 
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
   ({ theme, open }) => ({
@@ -209,7 +208,7 @@ export default function MenuResII() {
             <CajaSearch />
           </Box>
           <Box sx={{ flexGrow: 0 }}>
-            <CarWidget title="Carrito" nItems={10} />
+            <CarWidget title="Carrito"/>
           </Box>
         </Toolbar>
       </AppBar>

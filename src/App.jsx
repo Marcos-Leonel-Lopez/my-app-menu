@@ -7,6 +7,7 @@ import { createTheme } from '@mui/material/styles';
 import ItemDetailConteiner from './Components/ItemDetailContainer/ItemDetailConteiner';
 import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 import CartProvider from './context/CartProvider';
+import EditListJM from './Components/EditList/EditListJM';
 
 
 const theme = createTheme({
@@ -32,6 +33,7 @@ function App() {
     <ThemeProvider theme={theme} >
       <BrowserRouter>
         <CartProvider>
+          {/* <EditListJM/> */}
           <NavBar />
           <Routes>
             <Route path='/' element={<ItemListContainer />} />

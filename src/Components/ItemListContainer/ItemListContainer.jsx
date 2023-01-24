@@ -36,7 +36,7 @@ const ItemListContainer = () => {
 
     loading ? <Box className="Carga"> <CircularProgress className="Load" color="inherit" /></Box>
             : <Container className='Pagina-contenedora' maxWidth="100%">
-      <ItemList productos={products} nItems={products.length} />
+      <ItemList productos={products}  />
     </Container>
 
   );

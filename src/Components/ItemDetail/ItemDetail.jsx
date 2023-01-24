@@ -1,17 +1,26 @@
 import { Box, Divider, Rating, Typography } from "@mui/material";
+import { useContext } from "react";
 import { useState } from "react";
 import ItemCount from "../ItemCount/ItemCount";
+import { cartContext } from "../../context/cartContext";
+import { useEffect } from "react";
 
 
 
 const ItemDetail = ({ producto }) => {
     const [value, setValue] = useState(2.5);
-    const [nItem, setNItem] = useState();
+    const {cart , addItem} = useContext(cartContext);
+    const [nItem, setNItem] = useState(0);
 
-    const setItem = (e) =>{
-        setNItem(e);
-        
-    };
+
+
+//  const newItemCart = (e) => {
+//         console.log(e);
+//         if (e !== 0) {
+//             setNItem(e);
+//             addItem(producto, nItem);
+//         }
+//     };
 
     return (
         <>
@@ -25,7 +34,7 @@ const ItemDetail = ({ producto }) => {
                         <h4 className="Descipcion">{producto.description}</h4>
                         <Divider />
                     </div>
-                    <ItemCount className="Add-detail" stock={producto.stock} cantidad={setItem} />
+                    <ItemCount className="Add-detail" stock={producto.stock} producto={producto} />
                     <Typography variant="caption" display="block" gutterBottom>
                         Puntuanos: <Rating className="Rating"
                             name="simple-controlled"
@@ -34,6 +43,7 @@ const ItemDetail = ({ producto }) => {
                             onChange={(event, newValue) => { setValue(newValue); }}
                         />
                     </Typography>
+                    
                 </div>
             </Box>
         </>
@@ -42,4 +52,4 @@ const ItemDetail = ({ producto }) => {
 
 export default ItemDetail;
 
-{/* <ItemCount className="Add-detail" stock={producto.stock} cantidad={setItem} /> */}
+
