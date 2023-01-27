@@ -57,7 +57,7 @@
   align-items: center;
   background-color: grey;
   background-size: cover;
-  height: 850px;
+  height: calc(100vh - 50px);
   padding: 30% auto;
 }
 
@@ -142,4 +142,10 @@
     height: auto;
     border-radius: 10px;
   }
+}
+.Carrito {
+  color: red;
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  height: calc(100vh - 68.5px);
 }/*# sourceMappingURL=App.css.map */

@@ -3,13 +3,18 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "../ItemList/ItemList";
 import CircularProgress from '@mui/material/CircularProgress';
+import {getFirestore, collection, getDoc } from "firebase/firestore";
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
   const { category } = useParams();
-  const getProducts = fetch('http://localhost:5000/platos');
   const [loading, setLoading] = useState(true)
+  
+  const getProducts = fetch('http://localhost:5000/platos');
 
+
+
+  
 
   useEffect(() => {
     if (category) {
@@ -33,12 +38,19 @@ const ItemListContainer = () => {
   }, [category])
 
   return (
+    <>
+    {
+    loading ?
+      <Box className="Carga">
+        <CircularProgress className="Load" color="inherit" />
+      </Box>
+            : 
+      <Container className='Pagina-contenedora' maxWidth="100%">
+        <ItemList productos={products}/>
+      </Container>}
+    </>
 
-    loading ? <Box className="Carga"> <CircularProgress className="Load" color="inherit" /></Box>
-            : <Container className='Pagina-contenedora' maxWidth="100%">
-      <ItemList productos={products}  />
-    </Container>
-
+   
   );
 };
 

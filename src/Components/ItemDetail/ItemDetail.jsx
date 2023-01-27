@@ -13,15 +13,6 @@ const ItemDetail = ({ producto }) => {
     const [nItem, setNItem] = useState(0);
 
 
-
-//  const newItemCart = (e) => {
-//         console.log(e);
-//         if (e !== 0) {
-//             setNItem(e);
-//             addItem(producto, nItem);
-//         }
-//     };
-
     return (
         <>
             <Box className="Item-detail">
@@ -33,6 +24,7 @@ const ItemDetail = ({ producto }) => {
                         <h1 className="Nombre">{producto.title}: ${producto.price}</h1>
                         <h4 className="Descipcion">{producto.description}</h4>
                         <Divider />
+                        {producto.stock == 0 && <h3>Sin Stock!!</h3>}
                     </div>
                     <ItemCount className="Add-detail" stock={producto.stock} producto={producto} />
                     <Typography variant="caption" display="block" gutterBottom>

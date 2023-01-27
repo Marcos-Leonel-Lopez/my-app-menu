@@ -14,7 +14,6 @@ const ItemCount = ({stock, producto}) => {
     const [count, setCount] = useState(0);
     const add = ()=>{
         if (count !== 0) {
-        console.log(count);
         addItem(producto, count);
          }else{
             console.log('no se agrego item');

@@ -207,9 +207,11 @@ export default function MenuResII() {
           <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 2 }}>
             <CajaSearch />
           </Box>
-          <Box sx={{ flexGrow: 0 }}>
-            <CarWidget title="Carrito"/>
-          </Box>
+          <NavLink to="cart">
+            <Box sx={{ flexGrow: 0 }}>
+              <CarWidget title="Carrito"/>
+            </Box>
+          </NavLink>
         </Toolbar>
       </AppBar>
       <Drawer

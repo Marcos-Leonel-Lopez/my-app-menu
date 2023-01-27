@@ -8,6 +8,7 @@ import ItemDetailConteiner from './Components/ItemDetailContainer/ItemDetailCont
 import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 import CartProvider from './context/CartProvider';
 import EditListJM from './Components/EditList/EditListJM';
+import CartContainer from './Components/Cart/CartContainer';
 
 
 const theme = createTheme({
@@ -38,7 +39,8 @@ function App() {
           <Routes>
             <Route path='/' element={<ItemListContainer />} />
             <Route path='item/:id' element={<ItemDetailConteiner />} />
-            <Route path='/category/:category' element={<ItemListContainer />} />
+            <Route path='category/:category' element={<ItemListContainer />} />
+            <Route path='cart' element={<CartContainer />} />
           </Routes>
         </CartProvider>
       </BrowserRouter>

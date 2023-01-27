@@ -19,12 +19,11 @@ const ItemDetailConteiner = () => {
           
         },[])
   return (
-
     <>
-    <Container className='Detalles' sx={{display:'flex', flexDirection:'row', height:'200'}} maxWidth="100%">
-        <Box >
+    <Container className='Detalles' sx={{display:'flex', flexDirection:'row'}} maxWidth="100%">
+        
             <ItemDetail producto={singleProduct} />
-        </Box>
+        
     </Container>
     </>
   );
