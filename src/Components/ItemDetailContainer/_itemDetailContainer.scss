@@ -61,8 +61,8 @@
         align-items: center;
         background-color: grey;
         background-size: cover;
-      
-        overflow-y: scroll;
+      height: 100%;
+        
        
     }
     .Item-detail{
@@ -70,6 +70,8 @@
     flex-direction: column;
     width:560px;
     height:750px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     
     .Text-detail{
         display: flex;

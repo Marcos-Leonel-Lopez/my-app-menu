@@ -2,55 +2,76 @@ import { Container, Box } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "../ItemList/ItemList";
-import CircularProgress from '@mui/material/CircularProgress';
-import {getFirestore, collection, getDoc } from "firebase/firestore";
+import CircularProgress from "@mui/material/CircularProgress";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  query,
+  where,
+} from "firebase/firestore";
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
   const { category } = useParams();
-  const [loading, setLoading] = useState(true)
-  
-  const getProducts = fetch('http://localhost:5000/platos');
+  const [loading, setLoading] = useState(true);
 
+  const getProducts = () => {
+    const db = getFirestore();
+    const querySnapshot = collection(db, "products");
 
+    getDocs(querySnapshot)
+      .then((res) => {
+        const data = res.docs.map((doc) => {
+          return { id: doc.id, ...doc.data() };
+        });
+        setProducts(data);
+        console.log(data);
+      })
+      .catch((err) => console.log(err));
+  };
 
-  
+  const getCategory = () => {
+    const db = getFirestore();
+    const querySnapshot = collection(db, "products");
+    const newConfiguration = query(
+      querySnapshot,
+      where("category", "==", category)
+    );
+
+    getDocs(newConfiguration)
+      .then((res) => {
+        const data = res.docs.map((doc) => {
+          return { id: doc.id, ...doc.data() };
+        });
+        setProducts(data);
+        console.log(data);
+      })
+      .catch((err) => console.log(err));
+  };
 
   useEffect(() => {
     if (category) {
-      getProducts
-        .then(res => res.json())
-        .then(json => {
-          const filterProducts = json.filter((producto) => producto.category === category);
-          setProducts(filterProducts);
-          setLoading(false);
-        });
+      getCategory();
+    } else {
+      getProducts();
     }
-    else {
-      setTimeout(() => {
-        getProducts
-          .then(res => res.json())
-          .then(json => setProducts(json))
-        setLoading(false);
-
-      }, 2000)
-    }
-  }, [category])
+    setLoading(false);
+  }, [category]);
 
   return (
     <>
-    {
-    loading ?
-      <Box className="Carga">
-        <CircularProgress className="Load" color="inherit" />
-      </Box>
-            : 
-      <Container className='Pagina-contenedora' maxWidth="100%">
-        <ItemList productos={products}/>
-      </Container>}
+      {loading ? (
+        <Box className="Carga">
+          {console.log("cargando")}
+          <CircularProgress className="Load" color="inherit" />
+        </Box>
+      ) : (
+        <Container className="Pagina-contenedora" maxWidth="100%">
+          <ItemList productos={products} />
+        </Container>
+      )}
     </>
-
-   
   );
 };
 
