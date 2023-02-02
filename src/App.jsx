@@ -7,7 +7,6 @@ import { createTheme } from '@mui/material/styles';
 import ItemDetailConteiner from './Components/ItemDetailContainer/ItemDetailConteiner';
 import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 import CartProvider from './context/CartProvider';
-import EditListJM from './Components/EditList/EditListJM';
 import CartContainer from './Components/Cart/CartContainer';
 
 

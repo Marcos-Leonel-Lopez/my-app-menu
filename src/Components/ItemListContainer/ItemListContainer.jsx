@@ -28,7 +28,8 @@ const ItemListContainer = () => {
         setProducts(data);
         console.log(data);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err))
+      .finally(()=>setLoading(false));
   };
 
   const getCategory = () => {
@@ -47,7 +48,9 @@ const ItemListContainer = () => {
         setProducts(data);
         console.log(data);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err))
+      .finally(()=>setLoading(false));
+      
   };
 
   useEffect(() => {
@@ -56,14 +59,12 @@ const ItemListContainer = () => {
     } else {
       getProducts();
     }
-    setLoading(false);
   }, [category]);
 
   return (
     <>
       {loading ? (
         <Box className="Carga">
-          {console.log("cargando")}
           <CircularProgress className="Load" color="inherit" />
         </Box>
       ) : (

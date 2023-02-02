@@ -14,7 +14,7 @@ const ItemDetail = ({ producto }) => {
 
   return (
     <>
-      <Box className="Item-detail">
+        <Box className="Item-detail">;
         <Box sx={{display: 'flex' , flexDirection:'column'}}>
         <Link to={`/category/${producto.category}`} style={{textDecoration: 'none'}}>
           <Button variant="outlined" sx={{width:"25%", display: 'flex', justifyContent:'space-evenly'}}><ReplyAllIcon/> Volver </Button>
@@ -80,6 +80,12 @@ const ItemDetail = ({ producto }) => {
           </Box>
         </Modal>
       </div>
+
+      
+
+
+
+     
     </>
   );
 };
