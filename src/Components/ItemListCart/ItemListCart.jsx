@@ -36,7 +36,7 @@ const ItemListCart = ({ productos }) => {
               variant="outlined"
               sx={{ mr: 3 }}
             >
-              <DeleteIcon />
+              <DeleteIcon sx={{ mr:1 }}/>
               ELIMINAR
             </Button>
           </Grid>

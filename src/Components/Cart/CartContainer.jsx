@@ -19,6 +19,8 @@ import {
   updateDoc,
 } from "firebase/firestore";
 import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
+import ReplyAllIcon from '@mui/icons-material/ReplyAll';
+import PaidIcon from '@mui/icons-material/Paid';
 
 const style = {
   bgcolor: "background.paper",
@@ -140,7 +142,7 @@ const CartContainer = () => {
                 sx={{ mr: 3, mb: 3 }}
                 color="secondary"
               >
-                <ShoppingCartCheckoutIcon />
+                <ShoppingCartCheckoutIcon sx={{ mr:1 }}/>
                 FINALIZAR COMPRA
               </Button>
             </div>
@@ -212,7 +214,7 @@ const CartContainer = () => {
                     variant="contained"
                     sx={{ ml: 2, mt: 2 }}
                   >
-                    Volver al carrito
+                    <ReplyAllIcon sx={{ mr:1 }}/>Volver al carrito
                   </Button>
                   <Button
                     onClick={handleOrder}
@@ -220,7 +222,7 @@ const CartContainer = () => {
                     color="secondary"
                     sx={{ ml: 2, mt: 2 }}
                   >
-                    confirmar Comprar
+                    <PaidIcon sx={{ mr:1 }} />confirmar Comprar
                   </Button>
                 </div>
               </Box>
