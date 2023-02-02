@@ -1,19 +1,19 @@
 import { useState } from "react";
 import { cartContext } from "./cartContext";
 
+
 const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [bill, setBill] = useState(0);
   const [open, setOpen] = useState(false);
 
+
   const addItem = (item, quantity) => {
     let newCart;
     let product = cart.find((product) => product.id === item.id);
-    console.log(product);
     if (product) {
-      
-      if(product.quantity >= product.stock){
-        setOpen(true);
+      if(product.quantity + quantity > product.stock){
+        setOpen(true); //ABRE EL MODAL
         return ;
       }else{
         product.quantity += quantity;
@@ -27,6 +27,7 @@ const CartProvider = ({ children }) => {
         price: item.price,
         img: item.picture,
         category: item.category,
+        rating: item.rating,
         stock: item.stock,
         quantity: quantity,
       };
@@ -54,9 +55,12 @@ const CartProvider = ({ children }) => {
     setBill(0);
   };
 
+  
+
+
   return (
     <cartContext.Provider
-      value={{ cart, bill, setCart, addItem, removeItem, removeCart, open, setOpen }}
+      value={{ cart, bill, setCart, addItem, removeItem, removeCart, open, setOpen,  }}
     >
       {children}
     </cartContext.Provider>

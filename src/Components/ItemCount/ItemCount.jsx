@@ -10,13 +10,17 @@ const ItemCount = ({ stock, producto }) => {
   const theme = useTheme();
   const [desAdd, setDesAdd] = useState(false);
   const [desRem, setDesRem] = useState(true);
+  const [desCar, setDesCar] = useState(false);
   const { addItem } = useContext(cartContext);
   const [count, setCount] = useState(0);
+
+  
 
   const add = () => {
     if (count !== 0) {
       addItem(producto, count);
     } else {
+      setDesCar(true);
       console.log("no se agrego item");
     }
   };
@@ -25,6 +29,7 @@ const ItemCount = ({ stock, producto }) => {
       return setDesAdd(true);
     }
     setCount(count + 1);
+    setDesCar(false);
     setDesAdd(false);
     setDesRem(false);
   };
@@ -81,7 +86,7 @@ const ItemCount = ({ stock, producto }) => {
           </Button>
         </Box>
         <Box>
-          <Button variant="contained" onClick={add}>
+          <Button variant="contained" onClick={add} disabled={desCar}>
             Agregar al carrito
           </Button>
         </Box>

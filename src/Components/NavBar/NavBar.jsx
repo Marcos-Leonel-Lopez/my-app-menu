@@ -163,7 +163,7 @@ export default function MenuResII() {
             />
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <NavLink to="/category/entrada" activeclassname="active">
+            <NavLink to="/category/entrada" activeclassname="active" className="Inactive">
               <Button
                 key={"Entradas"}
                 onClick={handleCloseNavMenu}
@@ -172,7 +172,7 @@ export default function MenuResII() {
                 Entradas
               </Button>
             </NavLink>
-            <NavLink to="/category/principal" activeclassname="active">
+            <NavLink to="/category/principal" activeclassname="active" className="Inactive">
               <Button
                 key={"Platos Principales"}
                 sx={{ my: 2, color: "white", display: "block" }}
@@ -180,7 +180,7 @@ export default function MenuResII() {
                 Platos Principales
               </Button>
             </NavLink>
-            <NavLink to="/category/postre" activeclassname="active">
+            <NavLink to="/category/postre" activeclassname="active" className="Inactive">
               <Button
                 key={"Postres"}
                 onClick={handleCloseNavMenu}
@@ -189,7 +189,7 @@ export default function MenuResII() {
                 Postres
               </Button>
             </NavLink>
-            <NavLink to="/category/bebida" activeclassname="active">
+            <NavLink to="/category/bebida" activeclassname="active" className="Inactive">
               <Button
                 key={"Bebidas"}
                 onClick={handleCloseNavMenu}

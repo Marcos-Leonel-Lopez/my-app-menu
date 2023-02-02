@@ -1,8 +1,10 @@
-import { Box, Divider, Rating, Typography, Modal } from "@mui/material";
+import { Box, Divider, Rating, Typography, Modal, Button } from "@mui/material";
 import { useContext } from "react";
 import { useState } from "react";
 import ItemCount from "../ItemCount/ItemCount";
 import { cartContext } from "../../context/cartContext";
+import { Link } from "react-router-dom";
+import ReplyAllIcon from '@mui/icons-material/ReplyAll';
 
 const ItemDetail = ({ producto }) => {
   const [value, setValue] = useState(2.5);
@@ -13,29 +15,31 @@ const ItemDetail = ({ producto }) => {
   return (
     <>
       <Box className="Item-detail">
-        <div>
+        <Box sx={{display: 'flex' , flexDirection:'column'}}>
+        <Link to={`/category/${producto.category}`} style={{textDecoration: 'none'}}>
+          <Button variant="outlined" sx={{width:"25%", display: 'flex', justifyContent:'space-evenly'}}><ReplyAllIcon/> Volver </Button>
+        </Link>
           <img
             className="Imagen-detail"
             src={producto.picture}
             alt={producto.description}
           />
-        </div>
+        </Box>
         <div className="Text-detail">
           <div className="Description-detail">
             <h1 className="Nombre">
               {producto.title}:${producto.price}
             </h1>
-            <h4 className="Descipcion">{producto.description}</h4>
             <Divider />
-            {producto.stock == 0 && <h3>Sin Stock!!</h3>}
+            {producto.stock === 0 ? <h1 style={{color: 'red'}}>¡¡¡SIN STOCK!!!</h1> : <h4 className="Descipcion">{producto.description}</h4>}
           </div>
           <ItemCount
             className="Add-detail"
             stock={producto.stock}
             producto={producto}
           />
-          <Typography variant="caption" display="block" gutterBottom>
-            Puntuanos:{" "}
+          <Typography variant="caption" display="flex" gutterBottom justifyContent='center' alignItems='center'>
+            Puntuanos:
             <Rating
               className="Rating"
               name="simple-controlled"

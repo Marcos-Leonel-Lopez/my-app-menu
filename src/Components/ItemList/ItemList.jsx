@@ -14,7 +14,7 @@ const ItemList = ({ productos }) => {
       }}
     >
       {productos.map((producto) => (
-        <Link to={`/item/${producto.id}`} key={producto.id}>
+        <Link to={`/item/${producto.id}`} key={producto.id} className="Inactive">
           <MyItem producto={producto} />
         </Link>
       ))}

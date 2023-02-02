@@ -8,13 +8,12 @@ const CarWidget = () => {
   const { cart } = useContext(cartContext);
 
   useEffect(() => {
-    console.log(cart);
+    
     setN(
       cart.reduce((prev, curr) => {
         return prev + curr.quantity;
       }, 0)
     );
-    console.log(n);
   }, [cart]);
 
   return (

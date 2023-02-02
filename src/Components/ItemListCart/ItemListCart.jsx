@@ -1,5 +1,4 @@
 import { Box, Button, Grid } from "@mui/material";
-
 import DeleteIcon from "@mui/icons-material/Delete";
 import React, {  useContext } from "react";
 import { Link } from "react-router-dom";
@@ -12,7 +11,7 @@ const ItemListCart = ({ productos }) => {
   return (
     <Box>
       {productos.map((producto) => (
-        <Grid container spacing={2} sx={{ mt: 2, mb: 2, alignItems: "center" }}>
+        <Grid key={producto.id} container spacing={2} sx={{ mt: 2, mb: 2, alignItems: "center" }}>
           <Grid item xs={4} className="Container-foto">
             <Link to={`/item/${producto.id}`}>
               <img
