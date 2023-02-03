@@ -25,4 +25,4 @@ My-App-Menu es una aplicacion serverless, preparada para distinto tipo de pantal
 - Material-UI.
 
 
-![Alt Text](./src/assets/2023-02-03-15-58-00.gif).
+![Alt Text](./src/assets/2023-02-03-15-58-00.gif)
