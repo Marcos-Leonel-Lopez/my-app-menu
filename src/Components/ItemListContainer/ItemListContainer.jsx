@@ -26,7 +26,6 @@ const ItemListContainer = () => {
           return { id: doc.id, ...doc.data() };
         });
         setProducts(data);
-        console.log(data);
       })
       .catch((err) => console.log(err))
       .finally(()=>setLoading(false));
@@ -46,7 +45,7 @@ const ItemListContainer = () => {
           return { id: doc.id, ...doc.data() };
         });
         setProducts(data);
-        console.log(data);
+        
       })
       .catch((err) => console.log(err))
       .finally(()=>setLoading(false));

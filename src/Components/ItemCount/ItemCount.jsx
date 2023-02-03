@@ -21,7 +21,6 @@ const ItemCount = ({ stock, producto }) => {
       addItem(producto, count);
     } else {
       setDesCar(true);
-      console.log("no se agrego item");
     }
   };
   const suma = () => {
