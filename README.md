@@ -18,7 +18,7 @@ You may also see any lint errors in the console.
 # My-App-Menu
 ## _La app para que tu Restaurant tenga su propia carta online._
 
-My-App-Menu es una aplicacion serverless, preparada para distinto tipo de pantallas. La cual podria implementarse en un local gastronomico con la modalidad "presencial" o "para llevar" (take away).
+My-App-Menu es una aplicacion serverless, preparada para gran variedad de pantallas. La cual podria implementarse en un local gastronomico con la modalidad "presencial" o "para llevar" (take away).
 
 ## Tecnologias utilizadas
 - ReactJS.
