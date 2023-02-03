@@ -39,7 +39,7 @@ const ItemDetailConteiner = () => {
       >
         <ItemDetail producto={singleProduct}/>
       </Container>
-      )};
+      )}
     </>
   );
 };
