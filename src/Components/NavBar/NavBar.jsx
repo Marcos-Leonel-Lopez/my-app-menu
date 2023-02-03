@@ -15,10 +15,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-
 import imagenes from "../../assets/imagenes";
-import CajaSearch from "./CajaSearch";
-
 import {  Button } from "@mui/material";
 import CarWidget from "../CartWidget/CarWidget";
 import { Link, NavLink } from "react-router-dom";
@@ -199,9 +196,7 @@ export default function MenuResII() {
               </Button>
             </NavLink>
           </Box>
-          <Box sx={{ display: { xs: "none", md: "flex" }, mr: 2 }}>
-            <CajaSearch />
-          </Box>
+  
           <NavLink to="cart">
             <Box sx={{ flexGrow: 0 }}>
               <CarWidget title="Carrito" />
@@ -281,16 +276,10 @@ export default function MenuResII() {
           </NavLink>
 
           <Divider />
-          <Box>
-            <CajaSearch />
-          </Box>
-          <Divider />
+      
         </List>
       </Drawer>
       <Main open={open}>
-        {/* <Box >
-          <ItemListContainer />
-        </Box> */}
       </Main>
     </Box>
   );

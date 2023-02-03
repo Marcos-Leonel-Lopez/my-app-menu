@@ -13,7 +13,7 @@ const CartProvider = ({ children }) => {
     let product = cart.find((product) => product.id === item.id);
     if (product) {
       if(product.quantity + quantity > product.stock){
-        setOpen(true); //ABRE EL MODAL
+        setOpen(true);
         return ;
       }else{
         product.quantity += quantity;
